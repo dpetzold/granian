@@ -34,7 +34,7 @@ def prepare_import(path: str) -> str:
         print(f"Adding {path}")
         sys.path.insert(0, path)
 
-    sys.path.insert(0, os.getcwd())
+    sys.path.insert(0, "/app")
 
     pprint(sys.path)
 
