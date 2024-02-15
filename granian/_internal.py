@@ -34,6 +34,8 @@ def prepare_import(path: str) -> str:
         print(f"Adding {path}")
         sys.path.insert(0, path)
 
+    sys.path.insert(0, os.getcwd())
+
     pprint(sys.path)
 
     return ".".join(module_name[::-1])
